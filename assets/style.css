@@ -1,0 +1,219 @@
+body{
+  text-align: center;
+  background: url(../assets/img/giphy.gif);
+  background-size: cover;
+
+  border-radius: 10px;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+  
+}
+p{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+
+}
+.name{
+  color: rgb(255, 255, 255);
+}
+h2{
+   color: rgb(255, 255, 255);
+}
+.image1{
+  width: 200x;
+  height: 200px;
+  border-radius: 100px;
+}
+.image2{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.image3{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.image4{
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  
+}
+
+.name{
+  margin-top: 200px;
+}
+
+button {
+  font-family: lato,sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 10px 40px 10px 40px;
+  position: relative;
+  border: 5px solid #D27F78;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  
+ 
+  
+}
+
+
+button:hover{
+  background: #D27F78;
+}
+
+  .skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    float: right;
+    margin-right: 300px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #D27F78;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  .skill-bar{
+    height: 14px;
+    background: #D27F78;
+    border-radius: 3px;
+  }
+  
+  .skill-per{
+    height: 14px;
+    background: pink;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+  }
+  
+  .skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+  
+  @keyframes fillBars{
+    from{
+      width: 0;
+    }
+    to{
+      width: 100%;
+    }
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .fa-facebook {
+    background: linear-gradient(45deg, #1877F2, #1A5ECF); 
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 45px;
+    
+  }
+
+  .fa-instagram {
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    
+  
+  }
+  
+  .fa-google {
+     background: linear-gradient(45deg, #4285F4, #EA4335, #FBBC05, hsl(136, 53%, 43%));
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
+  }
+  .fb{
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+  }
+  .instagram{
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    .skills{
+        margin-right: 0px;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        padding-right: 0px;
+        padding-left: 5px;
+           }
+           .title{
+            font-size: 50px;
+           }
+           .projecttitle{
+            font-size: 30px;
+           }
+           .name{
+            font-size: 30px;
+           }
+           h2{
+            margin-bottom: 200px;
+           }
+}
